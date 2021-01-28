@@ -881,6 +881,9 @@ p {
         -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     }
+    .nav-iten {
+        color: black;
+    }
 }
 
 @media (max-width: 767px) {
@@ -895,6 +898,9 @@ p {
         -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+    .nav-iten {
+        color: black;
     }
 }
 
@@ -939,6 +945,7 @@ p {
     .navbar-area .navbar .navbar-nav .nav-item a {
         padding: 10px 0;
         display: block;
+        color: black;
         border: 0;
         margin: 0;
     }
@@ -948,6 +955,7 @@ p {
     .navbar-area .navbar .navbar-nav .nav-item a {
         padding: 10px 0;
         display: block;
+        color: black;
         border: 0;
         margin: 0;
     }
@@ -1539,6 +1547,7 @@ p {
 
 .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
     font-size: 44px;
+    margin-bottom: 20px;
     font-weight: 700;
     color: #fff;
     line-height: 55px;
