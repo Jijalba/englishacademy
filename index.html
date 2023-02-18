@@ -16,7 +16,9 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--====== Line Icons css ======-->
     <link rel="stylesheet" href="assets/css/LineIcons.css">
@@ -40,7 +42,23 @@
 </head>
 
 <body>
+    <style>
+        .page-scroll {
+            text-decoration: none !important;
+        }
+    </style>
+    <!-- <script>
+        "use strict";
+        var h = 900;
+        var w = 460;
+        const y = window.top.outerHeight / 2 + window.top.screenY - ( h / 2);
+        const x = window.top.outerWidth / 2 + window.top.screenX - ( w / 2);
 
+
+        let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+                      width=${w},height=${h},left=${x},top=${y}`
+        open('Inscripciones.html', "_blank" , params);
+    </script> -->
     <!--====== PRELOADER PART START ======-->
 
     <div class="preloader">
@@ -74,7 +92,9 @@
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarEight" aria-controls="navbarEight" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -89,7 +109,7 @@
                                         <a class="page-scroll" href="#cursos">CURSOS</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#docentes">DOCENTES</a>
+                                        <a class="page-scroll" href="#directivos">DIRECTIVOS</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#certificaciones">CERTIFICACIONES</a>
@@ -101,7 +121,7 @@
                                         <a class="page-scroll" href="#contacto">CONTACTO</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="https://moodle.englishacademy.com.ar/">MOODLE</a>
+                                        <a class="page-scroll" href="https://moodle.englishacademy.com.ar/">MOODLE</a>
                                     </li>
                                 </ul>
                             </div>
@@ -129,13 +149,15 @@
                     </ol> -->
 
                     <div class="carousel-inner">
-                        <div class="carousel-item bg_cover active" style="background-image: url(assets/images/slider-1.jpg)">
+                        <div class="carousel-item bg_cover active"
+                            style="background-image: url(assets/images/slider-1.jpg)">
                             <div class="carousel-caption">
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-xl-6 col-lg-7 col-sm-10">
                                             <h2 class="carousel-title">English for Everyone</h2>
-                                            <h4 style="color: white;">Cursos de inglés para niños, adolescentes y adultos. <br> Clases virtuales y presenciales.</h4>
+                                            <h4 style="color: white;">Cursos de inglés para niños, adolescentes y
+                                                adultos. <br> Clases virtuales y presenciales.</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -220,9 +242,12 @@
             <div class="sidebar-social d-flex align-items-center justify-content-center">
                 <span>Seguinos</span>
                 <ul>
-                    <li><a href="https://www.instagram.com/EnglishAcademyParana/" target="_blank"><i class="lni-instagram-filled"></i></a></li>
-                    <li><a href="https://www.facebook.com/EnglishAcademyParana" target="_blank"><i class="lni-facebook-filled"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/english-academy-paran%C3%A1-a046121aa/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
+                    <li><a href="https://www.instagram.com/EnglishAcademyParana/" target="_blank"><i
+                                class="lni-instagram-filled"></i></a></li>
+                    <li><a href="https://www.facebook.com/EnglishAcademyParana" target="_blank"><i
+                                class="lni-facebook-filled"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/english-academy-paran%C3%A1-a046121aa/" target="_blank"><i
+                                class="lni-linkedin-original"></i></a></li>
                 </ul>
             </div>
             <!-- sidebar social -->
@@ -253,6 +278,8 @@
                             <li data-filter="*" class="active">TODOS</li>
                             <li data-filter=".anuales-3">ANUALES</li>
                             <li data-filter=".cuatrimestrales-3">CUATRIMESTRALES</li>
+                            <li data-filter=".trimestrales-3">TRIMESTRALES</li>
+                            <li data-filter=".examenes-3">EXÁMENES INTERNACIONALES</li>
                             <li data-filter=".fines-3">PARA FINES ESPECIFICOS</li>
                             <li data-filter=".preparacion-3">PREPARACION</li>
                             <li data-filter=".nuevos-3" style="color:red;font-weight:bold">NUEVOS</li>
@@ -269,9 +296,12 @@
                             <img src="assets/images/ninos.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Inglés para niños</a></h4>
-                            <p class="text">Comenzar con el aprendizaje de una segunda lengua a temprana edad permite que los niños lo hagan de forma natural y sin grandes esfuerzos, tal como han adquirido su lengua materna. En English Academy tenemos cursos de inglés
-                                para niños a partir de los 4 años, donde aprenderán el idioma a través de actividades divertidas tales como juegos, canciones, manualidades, y mucho más!</p>
+                            <h4 class="portfolio-title">Inglés para niños</h4>
+                            <p class="text">Comenzar con el aprendizaje de una segunda lengua a temprana edad permite
+                                que los niños lo hagan de forma natural y sin grandes esfuerzos, tal como han adquirido
+                                su lengua materna. En English Academy tenemos cursos de inglés
+                                para niños a partir de los 4 años, donde aprenderán el idioma a través de actividades
+                                divertidas tales como juegos, canciones, manualidades, y mucho más!</p>
                         </div>
                     </div>
                     <!-- single portfolio -->
@@ -282,8 +312,10 @@
                             <img src="assets/images/adolescentes.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Inglés para adolescentes</a></h4>
-                            <p class="text">Aprender inglés en la adolescencia abre un sinfín de oportunidades para el futuro, así como también ayuda a apreciar la diversidad cultural que nos rodea. En English Academy ofrecemos cursos de inglés para adolescentes con
+                            <h4 class="portfolio-title">Inglés para adolescentes</h4>
+                            <p class="text">Aprender inglés en la adolescencia abre un sinfín de oportunidades para el
+                                futuro, así como también ayuda a apreciar la diversidad cultural que nos rodea. En
+                                English Academy ofrecemos cursos de inglés para adolescentes con
                                 o sin conocimientos previos del idioma.<br><br><br><br> </p>
                         </div>
                     </div>
@@ -295,8 +327,10 @@
                             <img src="assets/images/adultos.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Inglés para adultos</a></h4>
-                            <p class="text">No hay edad para aprender un idioma, ¡sólo tiene que haber voluntad! En English Academy te ayudaremos a alcanzar tus metas, ya sea para mejorar tus perspectivas de empleo o simplemente enriquecer tu vida aprendiendo un nuevo
+                            <h4 class="portfolio-title">Inglés para adultos</h4>
+                            <p class="text">No hay edad para aprender un idioma, ¡sólo tiene que haber voluntad! En
+                                English Academy te ayudaremos a alcanzar tus metas, ya sea para mejorar tus perspectivas
+                                de empleo o simplemente enriquecer tu vida aprendiendo un nuevo
                                 idioma.
                                 <br><br><br><br>
                             </p>
@@ -310,8 +344,10 @@
                             <img src="assets/images/conversacion.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Cursos de conversación</a></h4>
-                            <p class="text">Dos niveles: intermedio y avanzado. El objetivo de este curso es practicar y mejorar las habilidades lingüísticas de comprensión auditiva y de producción oral. Para lograr esto, realizamos diversas actividades, tales como describir
+                            <h4 class="portfolio-title">Cursos de conversación</h4>
+                            <p class="text">Tres niveles: elemental, intermedio y avanzado. El objetivo de este curso es practicar y
+                                mejorar las habilidades lingüísticas de comprensión auditiva y de producción oral. Para
+                                lograr esto, realizamos diversas actividades, tales como describir
                                 imágenes, debatir diferentes temas, inventar diálogos, hacer role-plays, etc.</p>
                         </div>
                     </div>
@@ -323,62 +359,113 @@
                             <img src="assets/images/viajeros.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Inglés para viajeros</a></h4>
-                            <p class="text">Destinado a aquellas personas que deseen tener más herramientas a la hora de comunicarse en el exterior. Aprendemos diferentes expresiones y términos relacionados a situaciones típicas de viaje (en el aeropuerto, en el avión,
+                            <h4 class="portfolio-title">Inglés para viajeros</h4>
+                            <p class="text">Destinado a aquellas personas que deseen tener más herramientas a la hora de
+                                comunicarse en el exterior. Aprendemos diferentes expresiones y términos relacionados a
+                                situaciones típicas de viaje (en el aeropuerto, en el avión,
                                 en el taxi, en el hotel, en el restaurante, etc)<br><br></p>
                         </div>
                     </div>
                     <!-- single portfolio -->
                 </div>
 
-                <div class="col-lg-4 col-sm-6 fines-3 preparacion-3 cuatrimestrales-3 nuevos-3 ">
+                <div class="col-lg-4 col-sm-6 fines-3 preparacion-3 trimestrales-3 ">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div class="portfolio-image">
                             <img src="assets/images/extranjero.png" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Inglés para vivir en el extranjero</a></h4>
-                            <p class="text">Orientado a personas que planean vivir o ya estén viviendo en otro país. En este curso aprenderemos todo el vocabulario y frases que vas a escuchar y necesitar utilizar en el día a día.<br><br><br></p>
+                            <h4 class="portfolio-title">Inglés para vivir en el extranjero</h4>
+                            <p class="text">Orientado a personas que planean vivir o ya estén viviendo en otro país. En
+                                este curso aprenderemos todo el vocabulario y frases que vas a escuchar y necesitar
+                                utilizar en el día a día.<br><br><br></p>
                         </div>
                     </div>
                     <!-- single portfolio -->
                 </div>
 
-                <div class="col-lg-4 col-sm-6 fines-3 nuevos-3 cuatrimestrales-3">
+                <div class="col-lg-4 col-sm-6 fines-3 nuevos-3 trimestrales-3">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                         <div class="portfolio-image">
                             <img src="assets/images/developer.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Inglés para desarrolladores</a></h4>
-                            <p class="text">El objetivo del curso es continuar aprendiendo y practicando inglés a través de actividades enfocadas en las 4 habilidades lingüisticas (reading,writing, listening, y fundamentalmente speaking). A su vez, se trabajará con textos
+                            <h4 class="portfolio-title">Inglés para IT</h4>
+                            <p class="text">El objetivo del curso es continuar aprendiendo y practicando inglés a través
+                                de actividades enfocadas en las 4 habilidades lingüisticas (reading,writing, listening,
+                                y fundamentalmente speaking). A su vez, se trabajará con textos
                                 y vocabulario técnico, y se repasarán estructuras gramaticales básicas.</p>
                         </div>
                     </div>
                     <!-- single portfolio -->
                 </div>
 
-                <div class="col-lg-4 col-sm-6 fines-3 preparacion-3">
+                <div class="col-lg-4 col-sm-6 fines-3 trimestrales-3 examenes-3 preparacion-3">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                         <div class="portfolio-image">
-                            <img src="assets/images/examenes.jpg" alt="">
+                            <img src="assets/images/ielts.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Examenes internacionales</a></h4>
-                            <p class="text">¿Querés rendir un examen con validez internacional? Ofrecemos cursos anuales de preparación para rendir el examen internacional IELTS (general & academic) y el examen internacional B2 First (ex FCE).</p>
+                            <h4 class="portfolio-title">IELTS (International English Language Testing System)</h4>
+                            <p class="text">
+                                Este examen es el más utilizado en el mundo para migración y educación superior de
+                                hablantes de inglés no nativos.
+                                Es aceptado por las mayorías de las instituciones académicas de EEUU, Australia, Gran
+                                Bretaña, Canadá, Irlanda, Nueva Zelanda, etc.
+                                Pertenece conjuntamente a la Universidad de Cambridge, al British Council y al IDP:
+                                IELTS Australia.
+                            </p>
                         </div>
                     </div>
                     <!-- single portfolio -->
                 </div>
 
-                <div class="col-lg-4 col-sm-6 fines-3 preparacion-3 nuevos-3">
+                <div class="col-lg-4 col-sm-6 anuales-3 fines-3 examenes-3 preparacion-3">
+                    <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                        <div class="portfolio-image">
+                            <img src="assets/images/b2First.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text">
+                            <h4 class="portfolio-title">B2 FIRST</h4>
+                            <p class="text">
+                                Con la titulación B2 First, demostrarás ante el mundo que tenés las destrezas
+                                lingüísticas necesarias para vivir y trabajar de manera independiente
+                                en un país angloparlante, así como también para estudiar en el extranjero.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- single portfolio -->
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 anuales-3 fines-3 examenes-3 preparacion-3 nuevos-3">
+                    <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                        <div class="portfolio-image">
+                            <img src="assets/images/CAE.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text">
+                            <h4 class="portfolio-title">CAE</h4>
+                            <p class="text">
+                                La preparación para C1 Advanced te ayuda a obtener las destrezas lingüísticas necesarias
+                                para desarrollarte al máximo en el estudio, en el trabajo y la residir en países
+                                angloparlantes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- single portfolio -->
+                </div>
+
+                <div class="col-lg-4 col-sm-6 fines-3 preparacion-3 anuales-3 nuevos-3">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
                         <div class="portfolio-image">
                             <img src="assets/images/profesorado.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Curso de preparación para el traductorado y profesorado en inglés.</a></h4>
-                            <p class="text">Si deseás comenzar a estudiar alguna de estas carreras y sentís que no contás con el nivel de inglés necesario, este curso es para vos. Durante un año, veremos diferentes estructuras gramaticales, vocabulario, y practicaremos
+                            <h4 class="portfolio-title">Curso de preparación para el traductorado y profesorado en
+                                inglés.</h4>
+                            <p class="text">Si deseás comenzar a estudiar alguna de estas carreras y sentís que no
+                                contás con el nivel de inglés necesario, este curso es para vos. Durante un año, veremos
+                                diferentes estructuras gramaticales, vocabulario, y practicaremos
                                 las cuatro habilidades lingüísticas.</p>
                         </div>
                     </div>
@@ -391,9 +478,29 @@
                             <img src="assets/images/in-company.jpg" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#">Cursos de inglés <br>in-company</a></h4>
-                            <p class="text">Dictamos clases grupales e individuales en empresas (virtuales y presenciales). Las clases están completamente adaptadas a sus necesidades particulares, y se destacan por su dinamismo, flexibilidad y eficacia. En el 2020 capacitamos
+                            <h4 class="portfolio-title">Cursos de inglés <br>in-company</h4>
+                            <p class="text">Dictamos clases grupales e individuales en empresas (virtuales y
+                                presenciales). Las clases están completamente adaptadas a sus necesidades particulares,
+                                y se destacan por su dinamismo, flexibilidad y eficacia. En el 2020 capacitamos
                                 a empleados de 3 reconocidas empresas de Software.</p>
+                        </div>
+                    </div>
+                    <!-- single portfolio -->
+                </div>
+
+                <div class="col-lg-4 col-sm-6 fines-3 nuevos-3 trimestrales-3">
+                    <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                        <div class="portfolio-image">
+                            <img src="assets/images/fonetica.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text">
+                            <h4 class="portfolio-title">Cursos de Fonética</h4>
+                            <p class="text">En este curso trabajaremos con los sonidos de vocales, diptongos y
+                                consonantes en inglés. Realizaremos diversas actividades
+                                de escucha y repetición oral para poder aprender y practicar los diferentes sonidos de
+                                esta lengua. También aprenderemos a
+                                transcribir estos sonidos para poder mejorar la pronunciación.
+                            </p>
                         </div>
                     </div>
                     <!-- single portfolio -->
@@ -405,14 +512,14 @@
         <!-- container -->
     </section>
 
-    <!--====== DOCENTES START ======-->
+    <!--====== DIRECTIVOS START ======-->
 
-    <section id="docentes" class="pricing-area">
+    <section id="directivos" class="pricing-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-20">
-                        <h3 class="title">Equipo docente</h3>
+                        <h3 class="title">Equipo directivo</h3>
                     </div>
                     <!-- section title -->
                 </div>
@@ -420,7 +527,7 @@
             <!-- row -->
             <div class="row justify-content-center">
 
-                <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="col-lg-6 col-md-7 col-sm-9">
                     <div class="pricing-style-one mt-40 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <div class="pricing-icon text-center">
                             <img src="assets/images/profesora-pamela.png" style="border-radius:50%;" alt="">
@@ -431,17 +538,27 @@
                         </div>
                         <div class="pricing-list">
                             <ul>
-                                <li><i class="lni-check-mark-circle"></i>Profesora en Inglés egresada de la FHAyCS, UADER.</li>
-                                <li><i class="lni-check-mark-circle"></i> Facilitadora para el programa de la extensión de TICs del CGE "Escuelas del Futuro".</li>
-                                <li><i class="lni-check-mark-circle"></i> Más de 
-                                    <script>document.write(new Date().getFullYear() -2012);</script> 
-                                    años de experiencia trabajando en escuelas e institutos con niños, adolescentes y adultos.</li>
+                                <li><i class="lni-check-mark-circle"></i>Profesora en Inglés egresada de la FHAyCS,
+                                    UADER.</li>
+                                <li><i class="lni-check-mark-circle"></i> Facilitadora para el programa de la extensión
+                                    de TICs del CGE "Escuelas del Futuro".</li>
+                                <li><i class="lni-check-mark-circle"></i> Especialista en ESI, DDHH y Ludopedagogía,
+                                    CGE-UADER.</li>
+                                <li><i class="lni-check-mark-circle"></i> Diplomada en Educación Inclusiva, Fundación
+                                    Archipiélago.</li>
+                                <li><i class="lni-check-mark-circle"></i> Docente en escuelas públicas, nivel primario y
+                                    secundario.</li>
+                                <li><i class="lni-check-mark-circle"></i> Más de
+                                    <script>document.write(new Date().getFullYear() - 2012);</script>
+                                    años de experiencia trabajando en escuelas e institutos con niños, adolescentes y
+                                    adultos.
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="col-lg-6 col-md-7 col-sm-9">
                     <div class="pricing-style-one mt-40 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="pricing-icon text-center">
                             <img src="assets/images/profesora-araceli.png" alt="">
@@ -452,19 +569,29 @@
                         </div>
                         <div class="pricing-list">
                             <ul>
-                                <li><i class="lni-check-mark-circle"></i> Profesora en Inglés egresada de la FHAyCS, UADER.</li>
-                                <li><i class="lni-check-mark-circle"></i> Especialista en Neurociencias Aplicadas a la Educación, UCU.</li>
-                                <li><i class="lni-check-mark-circle"></i> Máster en Lingüistica Aplicada a la Enseñanza de Inglés como Lengua Extranjera, FUNIBER.</li>
-                                <li><i class="lni-check-mark-circle"></i> Docente de la carrera "Profesorado en Inglés", UADER.</li>
-                                <li><i class="lni-check-mark-circle"></i> Más de   
-                                     <script>document.write(new Date().getFullYear() - 2012);</script> 
-                                     años de experiencia trabajando en escuelas e institutos con niños, adolescentes y adultos.</li>
+                                <li><i class="lni-check-mark-circle"></i> Profesora en Inglés egresada de la FHAyCS,
+                                    UADER.</li>
+                                <li><i class="lni-check-mark-circle"></i> Especialista en Neurociencias Aplicadas a la
+                                    Educación, UCU.</li>
+                                <li><i class="lni-check-mark-circle"></i> Especialista en ESI, DDHH y Ludopedagogía,
+                                    CGE-UADER.</li>
+                                <li><i class="lni-check-mark-circle"></i> Diplomada en Educación Inclusiva, Fundación
+                                    Archipiélago.</li>
+                                <li><i class="lni-check-mark-circle"></i> Máster en Lingüistica Aplicada a la Enseñanza
+                                    de Inglés como Lengua Extranjera, FUNIBER.</li>
+                                <li><i class="lni-check-mark-circle"></i> Docente de la carrera "Profesorado en Inglés",
+                                    UADER.</li>
+                                <li><i class="lni-check-mark-circle"></i> Más de
+                                    <script>document.write(new Date().getFullYear() - 2012);</script>
+                                    años de experiencia trabajando en escuelas e institutos con niños, adolescentes y
+                                    adultos.
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-7 col-sm-9">
+                <!-- <div class="col-lg-4 col-md-7 col-sm-9">
                     <div class="pricing-style-one mt-40 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.8s">
                         <div class="pricing-icon text-center">
                             <img src="assets/images/profesora-flavia.png" alt="">
@@ -604,10 +731,10 @@
                     </div>
                 </div>
 
+            </div> -->
+                <!-- row -->
             </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
+            <!-- container -->
     </section>
 
     <!--====== CERTIFICACIONES START ======-->
@@ -625,7 +752,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="portfolio-menu pt-30 text-center">
-                        Por ser alumno de English Academy, podrás acceder a cualquiera de estos exámenes con reconocimiento nacional e internacional para validar tus conocimientos de inglés.
+                        Por ser alumno de English Academy, podrás acceder a cualquiera de estos exámenes con
+                        reconocimiento nacional e internacional para validar tus conocimientos de inglés.
                     </div>
                 </div>
             </div>
@@ -636,8 +764,11 @@
                             <img src="assets/images/utn.png" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title text-center"><a href="#">Certificación de la Universidad Tecnológica Nacional</a></h4>
-                            <p class="text">La certificación oficial UTN-INSPT te brinda mejores oportunidades generando un valor agregado para tu curriculum académico o laboral. Tener una certificación UTN-INSP con validez nacional se considera una evidencia sólida
+                            <h4 class="portfolio-title text-center"><a href="#">Certificación de la Universidad
+                                    Tecnológica Nacional</a></h4>
+                            <p class="text">La certificación oficial UTN-INSPT te brinda mejores oportunidades generando
+                                un valor agregado para tu curriculum académico o laboral. Tener una certificación
+                                UTN-INSP con validez nacional se considera una evidencia sólida
                                 y fiable aceptada por universidades, instituciones y empresas de todo el país.</p>
                         </div>
                     </div>
@@ -650,8 +781,11 @@
                             <img src="assets/images/anglia.png" alt="">
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title text-center"><a href="#">Certificación Internacional de Anglia Examinations</a></h4>
-                            <p class="text">Las certificaciones de Anglia Examinations dependen de Chichester College - Institución educativa terciaria y estatal del Reino Unido. Diversas instituciones públicas y privadas en el mundo aceptan esta certificaciones, tanto
+                            <h4 class="portfolio-title text-center"><a href="#">Certificación Internacional de Anglia
+                                    Examinations</a></h4>
+                            <p class="text">Las certificaciones de Anglia Examinations dependen de Chichester College -
+                                Institución educativa terciaria y estatal del Reino Unido. Diversas instituciones
+                                públicas y privadas en el mundo aceptan esta certificaciones, tanto
                                 en el campo laboral como en el educativo. </p>
                         </div>
                     </div>
@@ -667,7 +801,9 @@
     <!--====== DIRECCION PART START ======-->
 
     <section id="direccion" class="map-area">
-        <iframe src="https://www.google.com/maps?q=Libertad%20187%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos%2C%20Argentina&z=16&t=&ie=UTF8&output=embed" width="100%" height="600"></iframe>
+        <iframe
+            src="https://www.google.com/maps?q=Libertad%20187%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos%2C%20Argentina&z=16&t=&ie=UTF8&output=embed"
+            width="100%" height="600"></iframe>
     </section>
 
 
@@ -688,7 +824,8 @@
                 <div class="col-lg-6">
                     <div class="contact-two mt-50 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <h4 class="contact-title">Conoce todos los medios para contactarte</h4>
-                        <p class="text">Envianos tu consulta por cualquiera de estos medios o llenando el formulario.</p>
+                        <p class="text">Envianos tu consulta por cualquiera de estos medios o llenando el formulario.
+                        </p>
                         <ul class="contact-info">
                             <li><i class="lni-money-location"></i> Libertad 187, Paraná, Entre Ríos.</li>
                             <li><i class="lni-facebook"></i> /EnglishAcademyParana</li>
@@ -701,7 +838,8 @@
                     <!-- contact two -->
                 </div>
                 <div class="col-lg-6">
-                    <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s"
+                        data-wow-delay="0.5s">
                         <form id="contact-form" action="https://formspree.io/f/xbjpqvvd" method="POST">
                             <div class="form-input mt-15">
                                 <label>Nombre</label>
@@ -722,7 +860,8 @@
                             <div class="form-input mt-15">
                                 <label>Mensaje</label>
                                 <div class="input-items default">
-                                    <textarea placeholder="Me contacto para pedir info sobre..." name="massage"></textarea>
+                                    <textarea placeholder="Me contacto para pedir info sobre..."
+                                        name="massage"></textarea>
                                     <i class="lni-pencil-alt"></i>
                                 </div>
                             </div>
@@ -800,7 +939,9 @@
                     <div class="col-lg-5">
                         <div class="copyright text-center text-lg-left mt-10">
                             <p class="text text-center">Todos los derechos reservados
-                                <a style="color: #38f9d7" rel="nofollow" href="#">English Academy</a> diseñado por <a style="color: #38f9d7" rel="nofollow" href="#">Joaquín Ijalba</a></p>
+                                <a style="color: #38f9d7" rel="nofollow" href="#">English Academy</a> diseñado por <a
+                                    style="color: #38f9d7" rel="nofollow" href="#">Joaquín Ijalba</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-2">
@@ -810,9 +951,12 @@
                     </div>
                     <div class="col-lg-5">
                         <ul class="social text-center text-lg-right mt-10">
-                            <li><a href="https://facebook.com/englishacademyparana" target="_blank"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="https://instagram.com/englishacademyparana" target="_blank"><i class="lni-instagram-original"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/english-academy-paran%C3%A1-a046121aa/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
+                            <li><a href="https://facebook.com/englishacademyparana" target="_blank"><i
+                                        class="lni-facebook-filled"></i></a></li>
+                            <li><a href="https://instagram.com/englishacademyparana" target="_blank"><i
+                                        class="lni-instagram-original"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/english-academy-paran%C3%A1-a046121aa/"
+                                    target="_blank"><i class="lni-linkedin-original"></i></a></li>
                         </ul>
                     </div>
                 </div>
